@@ -1,0 +1,59 @@
+/* index.css */
+
+.roadmap-cont {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0d0d0d, #3a005f);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.roadmap-title {
+  font-size: 2.5rem;
+  color: #e0e0e0;
+  animation: slide-in 1s ease-out forwards;
+}
+
+.milestones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.milestone {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  width: 80%;
+  max-width: 400px;
+}
+
+.animated-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 0.5s ease-in forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

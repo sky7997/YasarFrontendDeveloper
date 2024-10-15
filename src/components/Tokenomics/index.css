@@ -1,0 +1,82 @@
+/* index.css */
+
+.tokenomics-cont {
+    text-align: center;
+    padding: 2rem;
+    background-color: #cbcbe0; /* Dark background */
+    color: #ffffff;
+    animation: fade-in 0.5s ease-in forwards;
+  }
+  
+  .tokenomics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .tokenomics-item {
+    background: #4e1c1c; /* Dark violet background */
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .tokenomics-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tokenomics-item p {
+    font-size: 1rem;
+  }
+  
+  .tokenomics-item:hover {
+    transform: translateY(-5px);
+    background: #5c4d8e; /* Lighter shade on hover */
+  }
+  
+  /* Animation for fading in */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  /* index.css */
+
+/* index.css */
+
+.footer-cont {
+    display: flex;                 /* Use flexbox for horizontal layout */
+    justify-content: space-between; /* Space between items */
+    align-items: center;          /* Center items vertically */
+    background-color: #eeeef8;    /* Footer background color */
+    color: white;                 /* Text color */
+    padding: 1rem 2rem;           /* Padding around the footer */
+    position: relative;           /* Change to fixed if you want it to stick at the bottom */
+  }
+  
+  .footer-social {
+    display: flex;                /* Flexbox for social links */
+    gap: 20px;                   /* Space between links */
+  }
+  
+  .footer-social a {
+    color: #f39c12;              /* Link color */
+    text-decoration: none;        /* Remove underline */
+    font-weight: bold;            /* Bold text for links */
+  }
+  
+  .footer-social a:hover {
+    text-decoration: underline;   /* Underline on hover */
+    color: #ffcc00;               /* Change color on hover */
+  }
+  
+  .footer-cont p {
+    margin: 0;                   /* Remove default margin */
+    font-size: 0.9rem;           /* Smaller font size for copyright text */
+  }

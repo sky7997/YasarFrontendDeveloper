@@ -1,0 +1,42 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  padding: 20px;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
